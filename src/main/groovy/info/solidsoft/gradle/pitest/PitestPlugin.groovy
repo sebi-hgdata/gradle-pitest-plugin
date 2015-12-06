@@ -155,7 +155,7 @@ class PitestPlugin implements Plugin<Project> {
     private void addPitDependencies() {
         project.rootProject.buildscript.dependencies {
             log.info("Using PIT: $extension.pitestVersion")
-            pitest "com.github.hcoles.pitest:pitest-command-line::$extension.pitestVersion"
+            pitest "com.github.hcoles.pitest:pitest-command-line:$extension.pitestVersion"
         }
     }
 }
